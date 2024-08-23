@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Dropdown responsive js menu</title>
+  </head>
+  <body>
+    <div class="pageWrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="/" class="header__logo">
+              <img src="/favicon/logo.svg" width="46" height="46" alt="logo">
+            </a>
+
+            <nav class="navigation">
+              <ul class="menu menu_main">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item dropdown">
+                  <a href="#" class="menu__link dropdownToggle">
+                    <span class="dropdownToggle_text">Основное меню</span>
+                  </a>
+                  <ul class="menu dropdownMenu">
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Заказать вёрстку</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Отправить макет на проверку</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="#" class="menu__link">Хочу работать у вас</a>
+                    </li>
+                    <li class="menu__item dropdown">
+                      <a href="#" class="menu__link dropdownToggle">
+                        <span class="dropdownToggle_text">Есть предложение по работе с клиентом</span>
+                      </a>
+                      <div class="submenuWrapper">
+                        <ul class="menu dropdownMenu dropdownMenu_submenu">
+                          <li class="menu__item">
+                            <a href="#" class="menu__link">У меня есть оффер</a>
+                          </li>
+                          <li class="menu__item">
+                            <a href="#" class="menu__link">Сделать партнёром</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Наши сервисы</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="tel:++1 (321) 222 - 33 -33" class="phone">
+              <img src="/images/icon-tel.svg" width="24" height="24" alt="Phone icon" class="phone__icon">
+              <span class="phone__text">+1 (321) 222 - 33 -33</span>
+            </a>
+
+            <button type="button" class="hamburger" id="hamburger">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="firstScreen"></section>
+      </main>
+    </div>
+
+    <div class="backdrop" id='backdrop'></div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333333;
+  overflow-x: hidden;
+  min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+  backface-visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:active,
+textarea:focus,
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+  outline-color: transparent !important;
+}
