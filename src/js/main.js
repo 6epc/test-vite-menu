@@ -12,8 +12,10 @@ function toogleMobileMenu(el) {
   el.classList.toggle('active');
 }
 
+const btnMenu = document.getElementById('hamburger')
+
 document.body.addEventListener('click', function(event) {
-  if (event.target.classList.contains('hamburger')) {
+  if (btnMenu.contains(event.target)) {
     toogleActiveBodyClass();
   } else if (event.target.classList.contains('backdrop')) {
     removeActiveBodyClass()
